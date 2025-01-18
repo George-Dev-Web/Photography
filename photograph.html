@@ -4,14 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>G's Photography services</title>
+    <link rel="stylesheet" href="styles.css">
 
 
     <script>
         function showGallerySection(sectionId) {
             const sections = document.querySelectorAll('.gallery-section');
             sections.forEach(section => section.style.display = 'none');
-            document.getElementById(sectionId).style.display = 'block';
+            const selectedSection = document.getElementById(sectionId);
+            sectionToshow.style.display = 'block';
         }
+
+        function activateGalleryimages() {
+            const images = document.querySelectorAll('.gallery img');
+            galleryImages.forEach(img => {
+                img.addEventListener('click', (event) => {
+                  const category = event.target.alt.toLowerCase();
+                    showGallerySection(category);
+                });
+            });
+        }
+
+        window.onload = () => {
+            activateGalleryimages();
+            showGallerySection('landscape');
+        };
     </script>
 
 
