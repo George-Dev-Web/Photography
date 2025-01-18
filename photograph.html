@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G's Photography services</title>
+
+
+    <script>
+        function showGallerySection(sectionId) {
+            const sections = document.querySelectorAll('.gallery-section');
+            sections.forEach(section => section.style.display = 'none');
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+
+
+</head>
+
+
+<body>
+
+    <header>
+        <h1>Welcome to My Photography Portfolio</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <div class="dropdown">
+            <a href="#gallery">Gallery</a>
+            <ul class="submenu">
+                <li><a href="#landscape" onclick="showGallerySection('landscape')">Landscape</a></li>
+                <li><a href="#portraits" onclick="showGallerySection('portraits')">Portraits</a></li>
+                <li><a href="#wildlife" onclick="showGallerySection('wildlife')">Wildlife</a></li>
+            </ul>
+        </div>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+    <div class="container">
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <div class="dropdown">
+                <a href="#">Learn More</a>
+                <ul class="submenu">
+                    <li><a href="#aboutme">About Me</a></li>
+                    <li><a href="#services">Services Offered</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+
+            <p>Hello! I'm [Your Name], a passionate photographer who loves capturing the beauty of the world through my lens. From breathtaking landscapes to candid portraits, my goal is to tell a story with every shot. Welcome to my portfolio!</p>
+
+
+        </section>
+
+
+        <section id="gallery" class="gallery">
+            <h2>Gallery</h2>
+            <img src="https://via.placeholder.com/300" alt="Landscape" onclick="showGallerySection('landscape')">
+            <img src="https://via.placeholder.com/300" alt="Portraits" onclick="showGallerySection('portraits')">
+            <img src="https://via.placeholder.com/300" alt="Wildlife" onclick="showGallerySection('wildlife')">
+        </section>
+
+
+        <section id="landscape" class="gallery-section">
+            <h2>Landscape</h2>
+            <img src="https://via.placeholder.com/300" alt="Landscape Photo 1">
+            <img src="https://via.placeholder.com/300" alt="Landscape Photo 2">
+        </section>
+
+
+        <section id="portraits" class="gallery-section">
+            <h2>Portraits</h2>
+            <img src="https://via.placeholder.com/300" alt="Portrait Photo 1">
+            <img src="https://via.placeholder.com/300" alt="Portrait Photo 2">
+        </section>
+
+
+        <section id="wildlife" class="gallery-section">
+            <h2>Wildlife</h2>
+            <img src="https://via.placeholder.com/300" alt="Wildlife Photo 1">
+            <img src="https://via.placeholder.com/300" alt="Wildlife Photo 2">
+        </section>
+
+
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>If you'd like to get in touch, feel free to <a href="mailto:yourname@example.com">email me</a>!</p>
+        </section>
+
+
+    </div>
+
+
+    <footer>
+        <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+    </footer>
+
+
+</body>
+
+
+</html>
