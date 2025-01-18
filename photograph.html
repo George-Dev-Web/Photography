@@ -4,122 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>G's Photography services</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"href="styles.css">
 
 
-    <script>
-        function showGallerySection(sectionId) {
-            const sections = document.querySelectorAll('.gallery-section');
-            sections.forEach(section => section.style.display = 'none');
-            const selectedSection = document.getElementById(sectionId);
-            sectionToshow.style.display = 'block';
-        }
-
-        function activateGalleryimages() {
-            const images = document.querySelectorAll('.gallery img');
-            galleryImages.forEach(img => {
-                img.addEventListener('click', (event) => {
-                  const category = event.target.alt.toLowerCase();
-                    showGallerySection(category);
-                });
-            });
-        }
-
-        window.onload = () => {
-            activateGalleryimages();
-            showGallerySection('landscape');
-        };
-    </script>
-
-
-</head>
-
+    </head>
 
 <body>
 
     <header>
         <h1>Welcome to My Photography Portfolio</h1>
     </header>
-
     <nav>
         <a href="#about">About Me</a>
-        <div class="dropdown">
-            <a href="#gallery">Gallery</a>
-            <ul class="submenu">
-                <li><a href="#landscape" onclick="showGallerySection('landscape')">Landscape</a></li>
-                <li><a href="#portraits" onclick="showGallerySection('portraits')">Portraits</a></li>
-                <li><a href="#wildlife" onclick="showGallerySection('wildlife')">Wildlife</a></li>
-            </ul>
-        </div>
-        <a href="#contact">Contact</a>
+        <a href="landscape.html">Landscape</a>
+        <a href="portraits.html">Portraits</a>
+        <a href="wildlife.html">Wildlife</a>
     </nav>
-
-
     <div class="container">
-        <section id="about" class="about">
+        <section id="about">
             <h2>About Me</h2>
-            <div class="dropdown">
-                <a href="#">Learn More</a>
-                <ul class="submenu">
-                    <li><a href="#aboutme">About Me</a></li>
-                    <li><a href="#services">Services Offered</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-
-
-            <p>Hello! I'm [Your Name], a passionate photographer who loves capturing the beauty of the world through my lens. From breathtaking landscapes to candid portraits, my goal is to tell a story with every shot. Welcome to my portfolio!</p>
-
-
+            <p>Hello! I'm George, a passionate photographer who loves capturing the beauty of the world through my lens.</p>
         </section>
-
-
-        <section id="gallery" class="gallery">
+        <section class="gallery">
             <h2>Gallery</h2>
-            <img src="Land1.jpg" alt="Landscape" onclick="showGallerySection('landscape')">
-            <img src="port1.jpg" alt="Portraits" onclick="showGallerySection('portraits')">
-            <img src="wild1.jpg" alt="Wildlife" onclick="showGallerySection('wildlife')">
+            <a href="landscape.html"><img src="Land1.jpg" alt="Landscape"></a>
+            <a href="portraits.html"><img src="port1.jpg" alt="Portraits"></a>
+            <a href="wildlife.html"><img src="wild1.jpg" alt="Wildlife"></a>
         </section>
-
-
-        <section id="landscape" class="gallery-section">
-            <h2>landscapes</h2>
-            <img src="Land1.jpg" alt="Landscape Photo 1">
-            <img src="Land2.jpg" alt="Landscape Photo 2">
-            <img src="Land3.jpg" alt="Landscape Photo 3">
-        </section>
-
-
-        <section id="portraits" class="gallery-section">
-            <h2>Portraits</h2>
-            <img src="port1.jpg" alt="Portrait Photo 1">
-            <img src="Port2.jpg" alt="Portrait Photo 2">
-            <img src="Port3.jpg" alt="Portrait Photo 3">
-        </section>
-
-
-        <section id="wildlife" class="gallery-section">
-            <h2>Wildlife</h2>
-            <img src="https://via.placeholder.com/300" alt="Wildlife Photo 1">
-            <img src="https://via.placeholder.com/300" alt="Wildlife Photo 2">
-        </section>
-
-
-        <section id="contact" class="contact">
-            <h2>Contact</h2>
-            <p>If you'd like to get in touch, feel free to <a href="mailto:yourname@example.com">email me</a>!</p>
-        </section>
-
-
     </div>
-
-
     <footer>
         <p>&copy; 2025 [Your Name]. All rights reserved.</p>
     </footer>
-
-
 </body>
-
-
 </html>

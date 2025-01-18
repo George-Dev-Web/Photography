@@ -2,7 +2,11 @@ body{
   font-family: Arial, sans-serif;
  margin: 0;
  padding: 0;
- background-color: black;
+ background-image: url(background.jpg);
+ background-size: cover;
+ background-position: center;
+ background-attachment: fixed;
+ color: black;
 }
 header {
  background-color: #333;
@@ -17,7 +21,7 @@ nav {
  padding: 0.5rem 0;
 }
 nav a {
- color: white;
+ color: black;
  text-decoration: none;
  margin: 0 15px;
  font-weight: bold;
@@ -77,13 +81,12 @@ nav a {
  text-align: center;
 }
 .gallery img {
- max-width: 300px;
- width: 100%;
- height: auto;
+  width: 300px;
+ height: 200px;
  border: 2px solid #ddd;
  border-radius: 5px;
  transition: transform 0.3s;
- cursor: pointer;
+ object-fit: cover;
 }
 .gallery img:hover {
  transform: scale(1.05);
@@ -91,6 +94,6 @@ nav a {
 footer {
  text-align: center;
  padding: 1rem;
- background-color: #333;
+ background-color: none;
  color: white;
 }
