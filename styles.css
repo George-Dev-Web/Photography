@@ -2,8 +2,8 @@ body{
   font-family: Arial, sans-serif;
  margin: 0;
  padding: 0;
- background-image: url(background.jpg);
- background-size: cover;
+ background-image: url(back2.jpg);
+ background-size: auto;
  background-position: center;
  background-attachment: fixed;
  color: black;
@@ -27,70 +27,55 @@ nav a {
  font-weight: bold;
  position: relative;
 }
-.dropdown {
- position: relative;
-}
-.submenu {
- list-style: none;
- padding: 0;
- margin: 0;
- background-color: #555;
- position: absolute;
- top: 100%; /* Position it below the main link */
- left: 0;
- display: none; /* Hide submenu by default */
- z-index: 1000;
-}
-.submenu li {
- padding: 0.5rem 1rem;
-}
-.submenu li a {
- color: white;
- text-decoration: none;
- display: block;
-}
-.submenu li a:hover {
- background-color: #666;
-}
-.dropdown:hover .submenu {
- display: block; /* Show submenu on hover */
-}
+
 .container {
  max-width: 1200px;
  margin: 2rem auto;
  padding: 1rem;
  background: none;
- color: white;
+ color: black;
  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .about {
  text-align: center;
  margin-bottom: 2rem;
 }
-.about .dropdown {
- display: inline-block;
+
+.section-title{
+  text-align: center;
+  margin-bottom: 1rem;
 }
+
+.section-title h2{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ddd;
+  margin: 0;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid #ddd;
+  display: inline-block;
+}
+
 .gallery {
  display: flex;
  flex-wrap: wrap;
  gap: 10px;
  justify-content: center;
 }
-.gallery-section {
- display: none;
- text-align: center;
-}
+
 .gallery img {
-  width: 300px;
+ width: 300px;
  height: 200px;
  border: 2px solid #ddd;
  border-radius: 5px;
  transition: transform 0.3s;
- object-fit: cover;
+ 
 }
+
 .gallery img:hover {
  transform: scale(1.05);
 }
+
 footer {
  text-align: center;
  padding: 1rem;
