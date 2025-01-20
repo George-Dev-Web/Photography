@@ -1,4 +1,6 @@
-This project is inspired by different photography styles and the pictures taken convey various scenery and emotions.
+<h1> My Photography Website</h1>
+
+<p> This project is inspired by different photography styles and the pictures taken convey various scenery and emotions. </p>
 Part of this project contains
 - Hyperlinks to main galleries
 - Sample photographs
